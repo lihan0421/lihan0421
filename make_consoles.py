@@ -41,7 +41,7 @@ def row(y, label, value, vfill=INK, mono=True):
 # ---------------- 1. contribution console ----------------
 lines = [
     ('$ ', 'arturia --status', ICE, True),
-    ('● operator', 'Li Han (李涵)', INK, False),
+    ('● operator', 'Li Han', INK, True),
     ('● base', 'SJTU · LLMSE Lab', INK, False),
     ('● public repos', '19 total · 8 own', INK, True),
     ('● stars', '97 ★', INK, True),

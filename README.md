@@ -2,7 +2,7 @@
   <img src="./assets/banner.png" width="100%" alt="Arturia themed AI engineering banner" />
 </div>
 
-<h1 align="center">李涵 · Li Han</h1>
+<h1 align="center">Li Han</h1>
 
 <p align="center">
   Master student @ SJTU LLMSE · LLM agent builder · repository-level software engineering

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="316" viewBox="0 0 440 316">
+  <rect width="440" height="316" rx="12" fill="#ffffff" stroke="#dbe7f2" stroke-width="1.5"/>
+  <rect x="1" y="1" width="438" height="34" rx="11" fill="#f2f7fc"/>
+  <circle cx="20" cy="18" r="5" fill="#b8cfe3"/>
+  <circle cx="38" cy="18" r="5" fill="#9abfda"/>
+  <circle cx="56" cy="18" r="5" fill="#7ba6c9"/>
+  <text x="220.0" y="24" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="13" fill="#5b6b7b">arturia@github:~ — languages</text>
+
+<rect x="26" y="71" width="183" height="18" rx="9" fill="#cfe0ef"/>
+<text x="34" y="84" font-family="Consolas, Menlo, monospace" font-size="14" fill="#1a222b">Python</text>
+<text x="414" y="84" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="14" fill="#4a7ba6">57%</text>
+<rect x="26" y="113" width="95" height="18" rx="9" fill="#cfe0ef"/>
+<text x="34" y="126" font-family="Consolas, Menlo, monospace" font-size="14" fill="#1a222b">Jupyter</text>
+<text x="414" y="126" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="14" fill="#4a7ba6">30%</text>
+<rect x="26" y="155" width="31" height="18" rx="9" fill="#cfe0ef"/>
+<text x="34" y="168" font-family="Consolas, Menlo, monospace" font-size="14" fill="#1a222b">HTML</text>
+<text x="414" y="168" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="14" fill="#4a7ba6">10%</text>
+<rect x="26" y="197" width="5" height="18" rx="9" fill="#cfe0ef"/>
+<text x="34" y="210" font-family="Consolas, Menlo, monospace" font-size="14" fill="#1a222b">TypeScript</text>
+<text x="414" y="210" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="14" fill="#4a7ba6">2%</text>
+<rect x="26" y="239" width="3" height="18" rx="9" fill="#cfe0ef"/>
+<text x="34" y="252" font-family="Consolas, Menlo, monospace" font-size="14" fill="#1a222b">JavaScript</text>
+<text x="414" y="252" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="14" fill="#4a7ba6">1%</text>
+<text x="26" y="300" font-family="Consolas, Menlo, monospace" font-size="13" fill="#5b6b7b">bytes: 7,205,920 · non-fork repos</text>
+</svg>

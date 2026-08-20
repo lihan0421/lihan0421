@@ -58,8 +58,12 @@ I believe every piece of code can be played into a clean, debuggable melody.
 ### Research Console
 
 <p align="center">
-  <img width="49%" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=lihan0421&show_icons=true&rank_icon=percentile&hide_title=true&title_color=4a7ba6&icon_color=4a7ba6&text_color=334155&bg_color=ffffff&hide_border=true&hide=issues" />
-  <img width="49%" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lihan0421&layout=compact&hide_title=true&title_color=4a7ba6&icon_color=4a7ba6&text_color=334155&bg_color=ffffff&hide_border=true" />
+  <img width="100%" alt="Local contribution console" src="./assets/contribution-console.svg" />
+</p>
+
+<p align="center">
+  <img width="49%" alt="Local language console" src="./assets/language-console.svg" />
+  <img width="49%" alt="Local repository console" src="./assets/repository-console.svg" />
 </p>
 
 <p align="center">

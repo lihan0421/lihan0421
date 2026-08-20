@@ -4,8 +4,7 @@ import json
 
 D = json.load(open('console_data.json', encoding='utf-8'))
 LANGS = D['langs']
-TOTAL = D['total_bytes']
-REPOS = D['top_repos']
+TOTAL = D.get('total_bytes') or D.get('total', 0)
 
 INK = '#1a222b'
 SLATE = '#5b6b7b'
@@ -44,11 +43,12 @@ lines = [
     ('$ ', 'arturia --status', ICE, True),
     ('● operator', 'Li Han (李涵)', INK, False),
     ('● base', 'SJTU · LLMSE Lab', INK, False),
-    ('● public repos', '19 · own 13', INK, True),
+    ('● public repos', '19 total · 8 own', INK, True),
     ('● stars', '97 ★', INK, True),
     ('● followers', '7 · following 6', INK, True),
     ('● contributions', '52 (last 365d)', INK, True),
-    ('● papers', "ICSE 2026 · TOSEM · ICSE 2027 (in review)", INK, True),
+    ('● papers', 'ICSE 2026 (accepted) · TOSEM · ICSE 2027 (in review)', INK, True),
+    ('● data snapshot', '2026-08', SLATE, True),
 ]
 CW, CH = 900, 16 + 34 + len(lines) * 32
 svg = [frame(CW, CH, 'arturia@github:~ — contribution console')]
@@ -76,21 +76,21 @@ for lang, n in langs:
     svg.append(f'<text x="34" y="{y}" font-family="Consolas, Menlo, monospace" font-size="14" fill="{INK}">{esc(lang)}</text>')
     svg.append(f'<text x="414" y="{y}" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="14" fill="{ICE}">{pct:.0f}%</text>')
     y += 42
-svg.append(f'<text x="26" y="{y+6}" font-family="Consolas, Menlo, monospace" font-size="13" fill="{SLATE}">bytes: {TOTAL:,} · non-fork repos</text>')
+svg.append(f'<text x="26" y="{y+6}" font-family="Consolas, Menlo, monospace" font-size="13" fill="{SLATE}">bytes: {TOTAL:,} · own + lab flagship · no forks</text>')
 svg.append('</svg>')
 open('assets/language-console.svg', 'w', encoding='utf-8').write('\n'.join(svg))
 print('language-console.svg', BW, BH)
 
-# ---------------- 3. repository console ----------------
+# ---------------- 3. repository console (curated: lab flagships + own) ----------------
+REPOS = D['featured']
 RW, RH = 440, 16 + 34 + len(REPOS) * 32 + 24
 svg = [frame(RW, RH, 'arturia@github:~ — repositories')]
 y = 70
-for r in REPOS:
-    name = r['name']
+for name, stars in REPOS:
     svg.append(f'<text x="26" y="{y}" font-family="Consolas, Menlo, monospace" font-size="15" fill="{INK}">{esc(name)}</text>')
-    svg.append(f'<text x="414" y="{y}" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="15" fill="{ICE}">{r["stars"]} ★</text>')
+    svg.append(f'<text x="414" y="{y}" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="15" fill="{ICE}">{stars} ★</text>')
     y += 32
-svg.append(f'<text x="26" y="{y+4}" font-family="Consolas, Menlo, monospace" font-size="13" fill="{SLATE}">top-{len(REPOS)} by stars</text>')
+svg.append(f'<text x="26" y="{y+4}" font-family="Consolas, Menlo, monospace" font-size="13" fill="{SLATE}">flagship papers + own projects, by stars</text>')
 svg.append('</svg>')
 open('assets/repository-console.svg', 'w', encoding='utf-8').write('\n'.join(svg))
 print('repository-console.svg', RW, RH)

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="306" viewBox="0 0 900 306">
-  <rect width="900" height="306" rx="12" fill="#ffffff" stroke="#dbe7f2" stroke-width="1.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="338" viewBox="0 0 900 338">
+  <rect width="900" height="338" rx="12" fill="#ffffff" stroke="#dbe7f2" stroke-width="1.5"/>
   <rect x="1" y="1" width="898" height="34" rx="11" fill="#f2f7fc"/>
   <circle cx="20" cy="18" r="5" fill="#b8cfe3"/>
   <circle cx="38" cy="18" r="5" fill="#9abfda"/>
@@ -9,9 +9,10 @@
 <text x="26" y="70" font-family="Consolas, Menlo, monospace" font-size="15" fill="#5b6b7b">$ </text><text x="230" y="70" font-family="Consolas, Menlo, monospace" font-size="15" fill="#4a7ba6">arturia --status</text>
 <text x="26" y="102" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="15" fill="#5b6b7b">● operator</text><text x="230" y="102" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="15" fill="#1a222b">Li Han (李涵)</text>
 <text x="26" y="134" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="15" fill="#5b6b7b">● base</text><text x="230" y="134" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="15" fill="#1a222b">SJTU · LLMSE Lab</text>
-<text x="26" y="166" font-family="Consolas, Menlo, monospace" font-size="15" fill="#5b6b7b">● public repos</text><text x="230" y="166" font-family="Consolas, Menlo, monospace" font-size="15" fill="#1a222b">19 · own 13</text>
+<text x="26" y="166" font-family="Consolas, Menlo, monospace" font-size="15" fill="#5b6b7b">● public repos</text><text x="230" y="166" font-family="Consolas, Menlo, monospace" font-size="15" fill="#1a222b">19 total · 8 own</text>
 <text x="26" y="198" font-family="Consolas, Menlo, monospace" font-size="15" fill="#5b6b7b">● stars</text><text x="230" y="198" font-family="Consolas, Menlo, monospace" font-size="15" fill="#1a222b">97 ★</text>
 <text x="26" y="230" font-family="Consolas, Menlo, monospace" font-size="15" fill="#5b6b7b">● followers</text><text x="230" y="230" font-family="Consolas, Menlo, monospace" font-size="15" fill="#1a222b">7 · following 6</text>
 <text x="26" y="262" font-family="Consolas, Menlo, monospace" font-size="15" fill="#5b6b7b">● contributions</text><text x="230" y="262" font-family="Consolas, Menlo, monospace" font-size="15" fill="#1a222b">52 (last 365d)</text>
-<text x="26" y="294" font-family="Consolas, Menlo, monospace" font-size="15" fill="#5b6b7b">● papers</text><text x="230" y="294" font-family="Consolas, Menlo, monospace" font-size="15" fill="#1a222b">ICSE 2026 · TOSEM · ICSE 2027 (in review)</text>
+<text x="26" y="294" font-family="Consolas, Menlo, monospace" font-size="15" fill="#5b6b7b">● papers</text><text x="230" y="294" font-family="Consolas, Menlo, monospace" font-size="15" fill="#1a222b">ICSE 2026 (accepted) · TOSEM · ICSE 2027 (in review)</text>
+<text x="26" y="326" font-family="Consolas, Menlo, monospace" font-size="15" fill="#5b6b7b">● data snapshot</text><text x="230" y="326" font-family="Consolas, Menlo, monospace" font-size="15" fill="#5b6b7b">2026-08</text>
 </svg>

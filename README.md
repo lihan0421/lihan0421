@@ -25,7 +25,7 @@
 
 ---
 
-### 献给你的乐章 · A Song for the World
+### 献给世界的乐章 · A Song for the World
 
 I am Han Li, a master's student in the [LLM for Software Engineering Lab (LLMSE)](https://github.com/YerbaPage)
 at Shanghai Jiao Tong University, advised by Prof. Xiaodong Gu and Prof. Beijun Shen.
@@ -46,9 +46,9 @@ I believe every piece of code can be played into a clean, debuggable melody.
 
 | Project | Stars | Direction |
 | --- | ---: | --- |
-| [SWE-Debate](https://github.com/YerbaPage/SWE-Debate) | <img alt="SWE-Debate stars" src="https://img.shields.io/github/stars/YerbaPage/SWE-Debate?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Competitive multi-agent debate for software issue resolution · [ICSE 2026] |
-| [SkillForge](https://github.com/cslsolow/SkillForge) | <img alt="SkillForge stars" src="https://img.shields.io/github/stars/cslsolow/SkillForge?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Self-distilling agents for project-specific issue resolution |
-| [deepseek-harness-whitebook](https://github.com/lihan0421/deepseek-harness-whitebook) | <img alt="whitebook stars" src="https://img.shields.io/github/stars/lihan0421/deepseek-harness-whitebook?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | 逐代码段解析 deepseek-harness 的白皮书站点 |
+| [SWE-Debate](https://github.com/YerbaPage/SWE-Debate) | <img alt="SWE-Debate stars" src="https://img.shields.io/github/stars/YerbaPage/SWE-Debate?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Competitive multi-agent debate for software issue resolution · [ICSE 2026] · SWE-bench Pass@1 41.4% (Top-2) |
+| [SkillForge](https://github.com/cslsolow/SkillForge) | <img alt="SkillForge stars" src="https://img.shields.io/github/stars/cslsolow/SkillForge?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Self-distilling agents for project-specific issue resolution · [ICSE 2027] · SWE-bench Verified/Pro 72.2%/60.6% |
+| [deepseek-harness-whitebook](https://github.com/lihan0421/deepseek-harness-whitebook) | <img alt="whitebook stars" src="https://img.shields.io/github/stars/lihan0421/deepseek-harness-whitebook?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Line-by-line code handbook of deepseek-harness as a static whitepaper site |
 | [Furina-skillhub](https://github.com/lihan0421/Furina-skillhub) | <img alt="skillhub stars" src="https://img.shields.io/github/stars/lihan0421/Furina-skillhub?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Curated agent skills hub, synced from local skills |
 | [Awesome-Repo-Level-Code-Generation](https://github.com/YerbaPage/Awesome-Repo-Level-Code-Generation) | <img alt="Awesome list stars" src="https://img.shields.io/github/stars/YerbaPage/Awesome-Repo-Level-Code-Generation?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Must-read papers on repo-level code generation & issue resolution |
 | [novel-reader](https://github.com/lihan0421/novel-reader) | <img alt="novel-reader stars" src="https://img.shields.io/github/stars/lihan0421/novel-reader?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Read novels, one chapter at a time |
@@ -107,11 +107,11 @@ belong here. Yes, even if it is pretty. Especially then.
 </details>
 
 <div align="center">
-  <img src="./assets/arturia.png" width="56%" alt="Arturia, the Lateran musician, Arturia styled scene" />
+  <img src="./assets/arturia.png" width="56%" alt="Arturia, the Lateran musician from Arknights" />
 </div>
 
 <p align="center">
-  <sub>アルトゥリア · 奏者 · 献给世界的乐章 — Code, Debug, Review</sub>
+  <sub>Arturia · アルトゥリア · 奏者 — Code, Debug, Review</sub>
 </p>
 
 <p align="center">

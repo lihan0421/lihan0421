@@ -19,6 +19,9 @@ LANG_SHORT = {'Jupyter Notebook': 'Jupyter'}
 def esc(s):
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 
+def attr(s):
+    return esc(s).replace('"', '&quot;')
+
 def frame(w, h, title):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
   <rect width="{w}" height="{h}" rx="12" fill="{BG}" stroke="{BORDER}" stroke-width="1.5"/>
@@ -31,11 +34,9 @@ def frame(w, h, title):
 
 def row(y, label, value, vfill=INK, mono=True):
     lf = 'Consolas, Menlo, monospace' if mono else '"Microsoft YaHei", "PingFang SC", sans-serif'
-    out = f'<text x="26" y="{y}" font-family="{lf}" font-size="15" fill="{SLATE}">{esc(label)}</text>'
-    if mono:
-        out += f'<text x="230" y="{y}" font-family="Consolas, Menlo, monospace" font-size="15" fill="{vfill}">{esc(value)}</text>'
-    else:
-        out += f'<text x="230" y="{y}" font-family="\"Microsoft YaHei\", \"PingFang SC\", sans-serif" font-size="15" fill="{vfill}">{esc(value)}</text>'
+    fa = attr(lf)
+    out = f'<text x="26" y="{y}" font-family="{fa}" font-size="15" fill="{SLATE}">{esc(label)}</text>'
+    out += f'<text x="230" y="{y}" font-family="{fa}" font-size="15" fill="{vfill}">{esc(value)}</text>'
     return out
 
 # ---------------- 1. contribution console ----------------

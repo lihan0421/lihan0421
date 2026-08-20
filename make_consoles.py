@@ -82,7 +82,16 @@ open('assets/language-console.svg', 'w', encoding='utf-8').write('\n'.join(svg))
 print('language-console.svg', BW, BH)
 
 # ---------------- 3. repository console (curated: lab flagships + own) ----------------
-REPOS = D['featured']
+# Fallback list lives in code so the generator is reproducible without console_data.json;
+# console_data.json 'featured' (if present) overrides it.
+FEATURED = D.get('featured') or [
+    ('YerbaPage/SWE-Debate', 33),
+    ('cslsolow/SkillForge', 4),
+    ('deepseek-harness-whitebook', 2),
+    ('Furina-skillhub', 2),
+    ('water-sim', 0),
+]
+REPOS = FEATURED
 RW, RH = 440, 16 + 34 + len(REPOS) * 32 + 24
 svg = [frame(RW, RH, 'arturia@github:~ — repositories')]
 y = 70

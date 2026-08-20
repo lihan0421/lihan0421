@@ -62,19 +62,38 @@ cn_x = div_x + 46
 cn_bbox = dr.textbbox((0, 0), '李涵', font=f_name_cn)
 dr.text((cn_x, name_y - (cn_bbox[3] - cn_bbox[1]) / 2 - cn_bbox[1]), '李涵', font=f_name_cn, fill=INK)
 
-# 3.2 tagline
-f_tag = font(YAHEI, 42)
-text_center_y(dr, name_y + 128, 'LLM Agent Builder · Repository-level Software Engineering', f_tag, SLATE)
+# 3.2 tagline — kept short enough to stay left of the artwork (x < 940)
+f_tag = font(YAHEI, 34)
+text_center_y(dr, name_y + 128, 'LLM Agent Builder · Repository-level SE', f_tag, SLATE)
 
 # 3.3 secondary line
-f_sub = font(YAHEI, 30)
-text_center_y(dr, name_y + 192, 'M.S. @ SJTU LLMSE · SWE-bench · Multi-Agent Systems · ICSE 2026', f_sub, (124, 140, 155))
+f_sub = font(YAHEI, 26)
+text_center_y(dr, name_y + 192, 'M.S. @ SJTU LLMSE · SWE-bench · Multi-Agent · ICSE 2026', f_sub, (124, 140, 155))
 
-# 3.4 thin rule under text block
-dr.rectangle([X, name_y + 232, X + 800, name_y + 234], fill=ICE_SOFT)
-
-# 3.5 bottom-left attribution
+# attribution font defined before the guard below uses it
 f_attr = font(YAHEI, 24)
+
+# 3.4 text-safe guard: every text line must stay left of the artwork zone (x=981)
+art_left = 981
+line_checks = [
+    ('motif', '♪  ♫  Arturia Mode  ♬  ♪', f_motif),
+    ('name', 'Li Han', f_name_en),
+    ('cn_name', '李涵', f_name_cn),
+    ('tagline', 'LLM Agent Builder · Repository-level SE', f_tag),
+    ('sub', 'M.S. @ SJTU LLMSE · SWE-bench · Multi-Agent · ICSE 2026', f_sub),
+    ('attribution', '「献给世界的乐章」 — 明日方舟 · 阿尔图罗 (Arturia)', f_attr),
+]
+text_rights = []
+for label, txt, fnt in line_checks:
+    w = dr.textbbox((0, 0), txt, font=fnt)[2]
+    text_rights.append(w)
+    assert X + w <= art_left, f'text "{label}" would overlap artwork: right edge {X + w} >= {art_left}'
+max_text_w = max(text_rights)
+
+# 3.5 thin rule under text block (aligns with the widest line)
+dr.rectangle([X, name_y + 232, X + max_text_w + 8, name_y + 234], fill=ICE_SOFT)
+
+# 3.6 bottom-left attribution
 dr.text((X, H - 52), '「献给世界的乐章」 — 明日方舟 · 阿尔图罗 (Arturia)', font=f_attr, fill=(150, 163, 176))
 
 import os

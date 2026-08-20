@@ -51,7 +51,6 @@ I believe every piece of code can be played into a clean, debuggable melody.
 | [deepseek-harness-whitebook](https://github.com/lihan0421/deepseek-harness-whitebook) | <img alt="whitebook stars" src="https://img.shields.io/github/stars/lihan0421/deepseek-harness-whitebook?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Line-by-line code handbook of deepseek-harness as a static whitepaper site |
 | [Furina-skillhub](https://github.com/lihan0421/Furina-skillhub) | <img alt="skillhub stars" src="https://img.shields.io/github/stars/lihan0421/Furina-skillhub?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Curated agent skills hub, synced from local skills |
 | [Awesome-Repo-Level-Code-Generation](https://github.com/YerbaPage/Awesome-Repo-Level-Code-Generation) | <img alt="Awesome list stars" src="https://img.shields.io/github/stars/YerbaPage/Awesome-Repo-Level-Code-Generation?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Must-read papers on repo-level code generation & issue resolution |
-| [novel-reader](https://github.com/lihan0421/novel-reader) | <img alt="novel-reader stars" src="https://img.shields.io/github/stars/lihan0421/novel-reader?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=3d6ea3&color=111827&cacheSeconds=60" /> | Read novels, one chapter at a time |
 
 ---
 

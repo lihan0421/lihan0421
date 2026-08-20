@@ -48,19 +48,10 @@ f_motif = font(YAHEI, 34)
 dr.text((X, 96), '♪  ♫  Arturia Mode  ♬  ♪', font=f_motif, fill=ICE_SOFT)
 motif_w = dr.textbbox((0, 0), '♪  ♫  Arturia Mode  ♬  ♪', font=f_motif)[2]
 
-# 3.1 name: English + Chinese
+# 3.1 name (latin only)
 f_name_en = font(ARIAL_B, 108)
-f_name_cn = font(YAHEI_B, 96)
 name_y = 240
 text_center_y(dr, name_y, 'Li Han', f_name_en, INK)
-en_w = dr.textbbox((0, 0), 'Li Han', font=f_name_en)[2]
-
-# thin divider between EN and CN
-div_x = X + en_w + 42
-dr.rectangle([div_x, name_y - 58, div_x + 4, name_y + 58], fill=ICE)
-cn_x = div_x + 46
-cn_bbox = dr.textbbox((0, 0), '李涵', font=f_name_cn)
-dr.text((cn_x, name_y - (cn_bbox[3] - cn_bbox[1]) / 2 - cn_bbox[1]), '李涵', font=f_name_cn, fill=INK)
 
 # 3.2 tagline — kept short enough to stay left of the artwork (x < 940)
 f_tag = font(YAHEI, 34)
@@ -78,7 +69,6 @@ art_left = 981
 line_checks = [
     ('motif', '♪  ♫  Arturia Mode  ♬  ♪', f_motif),
     ('name', 'Li Han', f_name_en),
-    ('cn_name', '李涵', f_name_cn),
     ('tagline', 'LLM Agent Builder · Repository-level SE', f_tag),
     ('sub', 'M.S. @ SJTU LLMSE · SWE-bench · Multi-Agent · ICSE 2026', f_sub),
     ('attribution', '「献给世界的乐章」 — 明日方舟 · 阿尔图罗 (Arturia)', f_attr),

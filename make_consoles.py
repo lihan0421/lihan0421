@@ -92,14 +92,15 @@ FEATURED = D.get('featured') or [
     ('water-sim', 0),
 ]
 REPOS = FEATURED
-RW, RH = 440, 16 + 34 + len(REPOS) * 32 + 24
+# same layout formula as the language console so the two 49%-width cards align when side by side
+RW, RH = 440, 16 + 34 + len(REPOS) * 42 + 56
 svg = [frame(RW, RH, 'arturia@github:~ — repositories')]
-y = 70
+y = 84
 for name, stars in REPOS:
     svg.append(f'<text x="26" y="{y}" font-family="Consolas, Menlo, monospace" font-size="15" fill="{INK}">{esc(name)}</text>')
     svg.append(f'<text x="414" y="{y}" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="15" fill="{ICE}">{stars} ★</text>')
-    y += 32
-svg.append(f'<text x="26" y="{y+4}" font-family="Consolas, Menlo, monospace" font-size="13" fill="{SLATE}">flagship papers + own projects, by stars</text>')
+    y += 42
+svg.append(f'<text x="26" y="{y+6}" font-family="Consolas, Menlo, monospace" font-size="13" fill="{SLATE}">flagship papers + own projects, by stars</text>')
 svg.append('</svg>')
 open('assets/repository-console.svg', 'w', encoding='utf-8').write('\n'.join(svg))
 print('repository-console.svg', RW, RH)
